@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAYFULLAYEV SHERALI</title>
+<style>
+
+/* === GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0e0e0e;
+  color: white;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 80px 10%;
+}
+
+/* === NAV === */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
+}
+
+/* === HERO === */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text h1 {
+  font-size: 60px;
+  background: linear-gradient(45deg, #00A9FF, #FFFFFF, #E60023);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 4s infinite linear;
+  background-size: 300%;
+}
+  
+@keyframes gradientMove {
+  0% { background-position: 0% }
+  100% { background-position: 300% }
+}
+.hero-text p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+ 
+
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 35px;
+  border-radius: 10px;
+  background: #00eaff;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 20px #00eaff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #00eaff;
+}
+
+/* === ABOUT === */
+.about {
+  display: flex;
+  gap: 40px;
+}
+.about img {
+  width: 260px;
+  height: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00eaff;
+}
+
+/* === SKILLS === */
+.skills h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.skill {
+  margin-bottom: 20px;
+}
+.skill-title {
+  font-weight: 600;
+}
+.bar {
+  height: 12px;
+  background: rgb(40,40,40);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00eaff, #ff00b3);
+  width: 0;
+  animation: fillBar 2s forwards;
+}
+@keyframes fillBar {
+  to { width: var(--value); }
+}
+
+/* === PROJECTS === */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px #00eaff;
+}
+
+/* === CONTACT === */
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255,255,0.05);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.contact-box input, .contact-box textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  background: rgba(0,0,0,0.3);
+  color: white;
+}
+.contact-box button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  background: #00eaff;
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 0 15px #00eaff;
+  cursor: pointer;
+}
+footer {
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Маълумотнома</div>
+  <div>
+    <a href="#hero">Асосий</a>
+    <a href="#about">Мен хакимда</a>
+    <a href="#projects">Мехнат фаолияти</a>
+    <a href="#contact"></a>
+  </div>
+</nav>
+
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1>Сайфуллаев Шерали Султонович</h1>
+    <h2>МАЪЛУМОТИ:<br>
+        2006 — Янгиёр тумани «Гулбахор саноат» касб-ҳунар коллежини тамомлаган.<br>
+        МУТАХАССИСЛИГИ:<br>
+        Ҳуқуқшунос-иқтисодчи</h2>
+    <p>Партиявийлиги: йуқ<br>
+       Маълумоти: Урта махсус<br>
+       Маълумоти буйича мутахассислиги: Илмий даражаси:йуқ<br>
+       Қайси чет тилларини билади: йуқ<br>
+       Тамомлаган: Касб хунар коллежи<br>
+       Хуқуқшунос иқтисодчи илмий унвони: йуқ<br>
+       Давлат мукофотлари билан тақдирланганми(қандай): йуқ
+      
+       
+    </p>
+    <a class="hero-btn" href="#projects">Мехнат фаолияти</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <img src="https://www.dropbox.com/scl/fi/65j8sprs58yb7pniumzsv/Screenshot_20251125_190755_All-Document-Reader.jpg?rlkey=gjws4p14s63f7d0o04xl06clq&st=yqh137x5&dl=1
+" alt="men">
+  <div>
+    <h2>Мен хакимда</h2>
+    <p>
+      ХШШИР:
+      32804850590039<br>
+      Туғилган йили:
+      28.04.1985<br>
+      Миллати:
+      Узбек<br>
+      Туғилган жойи:
+      Тошкент вилояти Чиноз тумани<br>
+      
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Қушимча маълумотлар</h2>
+
+  <div class="skill">
+    <div class="skill-title">Б Тоифада транспорт бошқаруви</div>
+    <div class="bar"><div class="bar-fill" style="--value: 100%"></div></div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-title">Exel</div>
+    <div class="bar"><div class="bar-fill" style="--value: 97%"></div></div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-title">Рус тили</div>
+    <div class="bar"><div class="bar-fill" style="--value: 85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-title">Word</div>
+    <div class="bar"><div class="bar-fill" style="--value: 99%"></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Мехнат фаолияти</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>2006–2011 йй.</h3>
+      <p>""СУЛТОН ГИЁ ФАЙЗ" Ф/Х — Ҳуқуқшунос"</p>
+    </div>
+
+    <div class="card">
+      <h3>2015–2016 йй.</h3>
+      <p>ООО "ОЛТИН ДИЁР ҚУРИЛИШ" — Юрист</p>
+    </div>
+
+    <div class="card">
+      <h3>2016–2018 йй.</h3>
+      <p>КАДАСТР ХИЗМАТИ, ДЎК КАС. УЮШМАСИ — Ер тузиш мутахассиси
+</p>
+    </div>
+    
+    <div class="card">
+      <h3>2019–2020 йй.</h3>
+      <p>ЎЗБЕКИСТОН РЕСПУБЛИКАСИ ДАВЛАТ СОЛИҚ ҚЎМИТАСИ ҲУЗУРИДАГИ
+КАДАСТР АГЕНТЛИГИНИНГ ТОШКЕНТ ВИЛОЯТИ БОШҚАРМАСИ
+ДАВЛАТ МУАССАСАСИ — Ер тузиш етакчи мутахассиси
+</p>
+    </div>
+    
+    <div class="card">
+      <h3>2021–2021 йй.</h3>
+      <p>ЧИНОЗ ТУМАНИ ҚИШЛОҚ ХЎЖАЛИГИ БЎЛИМИ — Ҳудудий ер тузувчи</p>
+    </div>
+    
+    <div class="card">
+      <h3>2021–2022 йй.</h3>
+      <p>"АРҚ ЧИНОЗ" МЧЖ — Ер тузиш бўйича мутахассис
+</p>
+    </div>
+    
+    <div class="card">
+      <h3>2022–2024 йй.</h3>
+      <p>"EVERYDAY SHOX" МЧЖ — Топограф-геодезия қурувчи</p>
+    </div>
+    
+    <div class="card">
+      <h3>2024–2024 йй.</h3>
+      <p>"EVERYDAY SHOX" МЧЖ — Ҳуқуқшунос</p>
+    </div>
+    
+    <div class="card">
+      <h3>2024–2025 йй.</h3>
+      <p>"EVERYDAY" МЧЖ — Ер ўлчовчи (ўриндошлик бўйича)
+</p>
+    </div>
+
+  </div>
+</section>
+  <h1 id="contact" class="fire-text">Боғланиш учун телефон:</h1>
+  <p>+998 77 704 28 85</p>
+
+<footer>
+  © 2025 Sultonov Sardorbek DASTURCHI: +998 77 704 24 89
+</footer>
+
+</body>
+</html>
