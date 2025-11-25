@@ -182,6 +182,21 @@ footer {
   text-align: center;
   opacity: 0.6;
 }
+.fire-text {
+  font-size: 60px;
+  color: #ffae00;
+  text-shadow:
+    0 0 10px #ffae00,
+    0 0 20px #ff6a00,
+    0 0 40px #ff0000,
+    0 0 80px #ff0000;
+  animation: fire 1s infinite ease-in-out;
+}
+
+@keyframes fire {
+  0% { text-shadow: 0 0 15px #ffae00, 0 0 30px #ff6a00; }
+  100% { text-shadow: 0 0 25px #ffae00, 0 0 50px #ff0000; }
+}
 </style>
 </head>
 
@@ -201,14 +216,14 @@ footer {
   <div class="hero-text">
     <h1>Сайфуллаев Шерали Султонович</h1>
     <h2>МАЪЛУМОТИ:<br>
-        2006 — Янгиёл тумани «Гулбахор саноат» касб-ҳунар коллежини тамомлаган.<br>
+        <h2 class="fire-text">2006 — Янгиёл тумани «Гулбахор саноат» касб-ҳунар коллежини тамомлаган.<h2><br>
         МУТАХАССИСЛИГИ:<br>
         Ҳуқуқшунос-иқтисодчи</h2>
-    <p>Партиявийлиги: йуқ<br>
+    <p>Партиявийлиги: йўқ<br>
        Маълумоти: Урта махсус<br>
        Маълумоти буйича мутахассислиги: Хуқуқшунос, Иқтисодчи<br>
- Илмий даражаси:йуқ<br>
-       Қайси чет тилларини билади: йуқ<br>
+ Илмий даражаси:йўқ<br>
+       Қайси чет тилларини билади: Рус,Қозоқ,Қирғиз<br>
        Тамомлаган: Касб хунар коллежи<br>
        Хуқуқшунос иқтисодчи илмий унвони: йуқ<br>
        Давлат мукофотлари билан тақдирланганми(қандай): йуқ
@@ -254,6 +269,12 @@ footer {
     <div class="skill-title">Рус тили</div>
     <div class="bar"><div class="bar-fill" style="--value: 85%"></div></div>
   </div>
+
+  <div class="skill">
+    <div class="skill-title">Internet explore</div>
+    <div class="bar"><div class="bar-fill" style="--value: 95%"></div></div>
+  </div>
+
 
   <div class="skill">
     <div class="skill-title">Word</div>
@@ -312,7 +333,7 @@ footer {
     
     <div class="card">
       <h3>2024–2025 йй.</h3>
-      <p>"EVERYDAY" МЧЖ — Ер ўлчовчи (ўриндошлик бўйича)
+      <p>"EVERYDAY" МЧЖ — Ер ўлчовчи (ўриндошлик бўйича) Иқтисодчи
 </p>
     </div>
 
